@@ -1,0 +1,179 @@
+<html>
+    <title id="grad1">oof</title>
+    <body class="Body">
+        
+        <h1 id="grad1">
+            Rum N Rags Games
+        </h1>
+
+       <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'peepee')">Contact me</button>
+        <button class="tablinks" onclick="openTab(event, 'Pog')">Youtube</button>
+        <button class="tablinks" onclick="openTab(event, 'Donate')">Donate</button>
+        <button class="tablinks" onclick="openTab(event, 'Discord')">Discord</button>
+      </div>
+      
+      
+      <div id="peepee" class="tabcontent">
+        <button class="TabButton" onclick="this.parentElement.style.display='none'">Close</button>
+        <br><h3>You can Contact me at any of the folloing socials</h3>
+        <a class="button" href="https://www.youtube.com/channel/UCjdnNGjmRayrvEr5NcJfAYQ" target="_blank">Check out my Youtube channel</a>
+      </div>
+      
+      <div id="Pog" class="tabcontent">
+        <button class="TabButton" onclick="this.parentElement.style.display='none'">Close</button>
+        <br><h3>This is where i post devlogs and updates for my game</h3>
+        <a class="button" href="https://www.youtube.com/channel/UCjdnNGjmRayrvEr5NcJfAYQ" target="_blank">Check out my Youtube channel</a>
+      </div>
+      
+      <div id="Donate" class="tabcontent">
+        <button class="TabButton" onclick="this.parentElement.style.display='none'">Close</button>
+        <br><h3>you dont have but if you want to you can Donate</h3>
+        <a class="button" href="https://discord.gg/swycUzdd" target="_blank">Join the discord here</a>
+      </div>
+
+      <div id="Discord" class="tabcontent">
+        <button class="TabButton" onclick="this.parentElement.style.display='none'">Close</button>
+        <h2></h2>
+        <a class="button" href="https://discord.gg/swycUzdd" target="_blank">Join the discord here</a>
+      </div>
+    </body>
+
+    <style>
+    
+    .body
+    {
+        background-color: rgb(29, 29, 29);
+    }
+
+    .tablinks
+    {
+        font-size: 20;
+        font-family: Monaco, "Courier New", monospace;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+    }
+    #grad1
+    {
+        
+        font-family: Monaco, "Courier New", monospace;
+        font-size: 71;
+        background-image: linear-gradient(to bottom right, rgb(9, 255, 0), rgb(25, 0, 255));
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #ffffff;
+    }
+
+    .TabButton
+    {
+        float: left;
+        font-size: 20;
+        font-family: Monaco, "Courier New", monospace;
+        font-weight: bolder;
+        border: 2px solid rgb(0, 0, 0);
+        background-color: rgb(124, 124, 124);
+        color: rgb(255, 255, 255);
+    }
+    .button
+    {
+        background-color: rgb(124, 124, 124);
+        border: 2px solid rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    
+    .tabcontent 
+    {
+        float: left;
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        background-color: rgb(124, 124, 124);
+        position: absolute;
+        left: auto;
+        right: 10;
+        top: 60;
+        color: rgb(255, 255, 255);
+        font-family: Monaco, "Courier New", monospace;
+        font-weight: bolder;
+        animation: fadeEffect .5s; 
+    }
+
+    @keyframes fadeEffect
+    {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    .tab 
+    {
+        overflow: hidden;
+        border: none;
+        background-color: none;
+        position: absolute;
+        right: 10;
+        top: 10;
+    }
+
+
+    .tab button
+    {
+        background-color: inherit;
+        float: right;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+    }
+
+    .tab button:hover 
+    {
+        color: rgb(167, 0, 0);
+    }
+
+    .tab button.active 
+    {
+        color: rgb(124, 2, 2);
+    }
+
+   
+    </style>
+    
+    
+    <script>
+
+        function openTab(evt, tabName) 
+        {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++)
+            {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) 
+            {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</html>
