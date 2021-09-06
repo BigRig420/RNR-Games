@@ -1,0 +1,163 @@
+<html>
+
+    <head>
+       <title>RNR-Games</title>
+       <link rel="icon" href="favicon.jpg" type="image/jpg">
+
+    </head>
+    
+    <body class="Body">
+
+        <h1 id="grad1" ta>
+            Rum N Rags Games
+        </h1>
+    
+        <div class="tab">
+            <a href=".html/ContactMe.html" class="tablinks">  Contact Me  </a>
+            <a href="./Donate.html" class="tablinks">  Donate  </a>
+            <a href="./YoutubeDiscord.html" class="tablinks">  Discord and Youtube  </a>
+            <a href="./Projects.html" class="tablinks">  Projects  </a>
+        </div>
+    
+    </body>
+
+
+
+
+    <style>
+    
+    .cimg
+    {
+        border-radius: 50%;
+    }
+
+    .invisp
+    {
+        color: transparent;
+    }
+
+    .body
+    {
+        background-color: rgb(29, 29, 29);
+    }
+
+    .tablinks
+    {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 20;
+        font-family: Monaco, "Courier New", monospace;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+    }
+    
+    #grad1
+    {
+        
+        /* font-family: Monaco, "Courier New", monospace; */
+        font-size: 75;
+        background-image: linear-gradient(to bottom right, rgb(9, 255, 0), rgb(25, 0, 255));
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #ffffff;
+    }
+
+    .TabButton
+    {
+        float: left;
+        font-size: 20;
+        font-family: Monaco, "Courier New", monospace;
+        font-weight: bolder;
+        border: 2px solid rgb(0, 0, 0);
+        background-color: rgb(124, 124, 124);
+        color: rgb(255, 255, 255);
+    }
+    .button
+    {
+        background-color: rgb(124, 124, 124);
+        border: 2px solid rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding: 5px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    
+    .tabcontent 
+    {
+        float: left;
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        background-color: rgb(124, 124, 124);
+        position: absolute;
+        left: auto;
+        top: 120;
+        color: rgb(255, 255, 255);
+        font-family: Monaco, "Courier New", monospace;
+        font-weight: bolder;
+        animation: fadeEffect .8s; 
+    }
+
+    
+
+    .tab 
+    {
+        padding: 10px;
+        overflow: hidden;
+        border: none;
+        background-color: none;
+        position: absolute;
+        left: 10;
+        top: 100;
+    }
+
+
+    .tablinks:hover 
+    {
+        color: rgb(167, 0, 0);
+    }
+
+    .tablinks.active 
+    {
+        color: rgb(153, 2, 2);
+    }
+    
+
+   
+    </style>
+    
+    
+    <script>
+
+        function openTab(evt, tabName) 
+        {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++)
+            {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) 
+            {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</html>
