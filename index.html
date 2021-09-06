@@ -11,108 +11,21 @@
         <h1 id="grad1" ta>
             Rum N Rags Games
         </h1>
-        
-        
-
+    
         <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'peepee')">Contact me</button>
-            <button class="tablinks" onclick="openTab(event, 'Pog')">Youtube</button>
-            <button class="tablinks" onclick="openTab(event, 'Discord')">Discord</button>
-            <button class="tablinks" onclick="openTab(event, 'Donate')">Donate</button>
-            <button class="tablinks" onclick="openTab(event, 'Perks')">Donator Perks</button>
-            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+            <a href="./ContactMe.html" class="tablinks">  Contact Me  </a>
+            <a href="./Donate.html" class="tablinks">  Donate  </a>
+            <a href="./YoutubeDiscord.html" class="tablinks">  Discord and Youtube  </a>
+            <a href="./Projects.html" class="tablinks">  Projects  </a>
         </div>
-      
-      
-
-        <div id="Projects" class="tabcontent">
-            <button class="CloseButton" onclick="this.parentElement.style.display='none'">Close</button>
-                <br><p2>
-                    <br>a list off all my curent and past projects
-                    <br>with links to a playlist with vieos about 
-                    <br>them
-                </p2>
-            <br><a href="https://www.youtube.com/playlist?list=PL9HJOxIBCojhXX-WJn3z2odbAK6o2A7t7" target="_blank"><img src="iftlh.png" class="cimg" width="50" height="50" alt="RNR-Games"><p1>In For The Long Haul</p1></a>
-            <br><a href="https://bigrig420.github.io/nots-and-crosses/" target="_blank"><img src="nac.png" class="cimg" width="50" height="50" alt="RNR-Games"><p1>HTML Nots And Crosses Game</p1></a>
-        </div>
-
-
-      <div id="peepee" class="tabcontent">
-        <button class="CloseButton" onclick="this.parentElement.style.display='none'">Close</button>
-            <br><p2>
-                <br>For questions about my games or buissnes proposals 
-                <br>you can Contact me at any of the folloing socials
-            </p2>
-        <br><a href = "mailto: rumnragsgames@outlook.com" target="_blank"><img src="Outlook.png" height="50" width="50" alt="RNR-Games"></a><p1 class="invisp">...</p1><a href = "mailto: rumnragsgames@outlook.com" target="_blank"><img src="Twittericon.png" height="50" width="50" alt="RNR-Games"></a><p1 class="invisp">...</p1><a href = "https://www.instagram.com/rumnragsgames/" target="_blank"><img src="Instagramicon.png" height="50" width="50" alt="RNR-Games"></a>
-      </div>
-      
-
-
-
-
-      <div id="Pog" class="tabcontent">
-        <button class="CloseButton" onclick="this.parentElement.style.display='none'">Close</button>
-            <br><p2>
-                <br>This is where i post devlogs and updates for my game
-            </p2>
-        <br><a class="button" href="https://www.youtube.com/channel/UCjdnNGjmRayrvEr5NcJfAYQ" target="_blank">Check out my Youtube channel</a>
-      </div>
-      
-
-
-
-
-      <div id="Donate" class="tabcontent">
-        <button class="CloseButton" onclick="this.parentElement.style.display='none'">Close</button>
-        <br><p2>
-            <br>you dont have but if you want to you can Donate
-        </p2>
-        <br><a class="button" href="https://discord.gg/swycUzdd" target="_blank">Donations not yet set up</a>
-      </div>
-
-
-
-
-      <div id="Discord" class="tabcontent">
-        <button class="CloseButton" onclick="this.parentElement.style.display='none'">Close</button>
-            <br><p2>
-                <br>join the discord to get more frequent 
-                <br>updates on the game and get to hang
-                <br>out with the communitey
-            </p2>
-        <br><a class="button" href="https://discord.gg/swycUzdd" target="_blank">Join the discord here</a>
-      </div>
-
-
-      
-      <div id="Perks" class="tabcontent">
-        <button class="CloseButton" onclick="this.parentElement.style.display='none'">Close</button>
-                <br><p2>
-                <br>Perks you get for donating can include
-                <br>.Donator only streams
-                <br>.Bonus Content
-                <br>.More Frequent Updates 
-                <br>.Donator only discord role
-            </p2>
-        </div>
-
+    
     </body>
 
 
 
 
     <style>
-    .CloseButton
-    {
-        float: left;
-        font-size: 20;
-        font-family: Monaco, "Courier New", monospace;
-        font-weight: bolder;
-        border: 2px solid rgb(0, 0, 0);
-        background-color: rgb(255, 0, 0);
-        color: rgb(255, 255, 255);
-    }
-
+    
     .cimg
     {
         border-radius: 50%;
@@ -130,6 +43,8 @@
 
     .tablinks
     {
+        padding: 10px;
+        text-decoration: none;
         font-size: 20;
         font-family: Monaco, "Courier New", monospace;
         font-weight: bolder;
@@ -190,40 +105,26 @@
         animation: fadeEffect .8s; 
     }
 
-    @keyframes fadeEffect
-    {
-        from {opacity: 0;}
-        to {opacity: 1;}
-    }
+    
 
     .tab 
     {
+        padding: 10px;
         overflow: hidden;
         border: none;
         background-color: none;
         position: absolute;
         left: 10;
-        top: 75;
+        top: 100;
     }
 
 
-    .tab button
-    {
-        background-color: inherit;
-        float: right;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        transition: 0.3s;
-    }
-
-    .tab button:hover 
+    .tablinks:hover 
     {
         color: rgb(167, 0, 0);
     }
 
-    .tab button.active 
+    .tablinks.active 
     {
         color: rgb(153, 2, 2);
     }
